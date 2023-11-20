@@ -46,20 +46,20 @@ ALTER USER 'sys_temp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 ### Решение 1
 
-1.1. sudo apt install mysql-server
-1.2. mysql> CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
-1.3. ![users.png)](https://github.com/v1us1885/hw-DDL-DML/blob/main/users.png)
+1.1. sudo apt install mysql-server   
+1.2. mysql> CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';   
+1.3. ![users.png)](https://github.com/v1us1885/hw-DDL-DML/blob/main/users.png)   
 1.4. mysql> GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost';   
-     mysql> FLUSH PRIVILEGES;
-1.5. ![grants.png)](https://github.com/v1us1885/hw-DDL-DML/blob/main/grants.png)
-1.6. mysql -u sys_temp -p
-1.7. wget https://downloads.mysql.com/docs/sakila-db.zip
-     unzip sakila-db.zip
-1.8. mysql> CREATE DATABASE sakila;
-     mysql> USE sakila;
-	 mysql> source sakila-db/sakila-schema.sql
-	 mysql> source sakila-db/sakila-data.sql
-1.9. ![tables.png)](https://github.com/v1us1885/hw-DDL-DML/blob/main/tables.png)
+     mysql> FLUSH PRIVILEGES;   
+1.5. ![grants.png)](https://github.com/v1us1885/hw-DDL-DML/blob/main/grants.png)   
+1.6. mysql -u sys_temp -p   
+1.7. wget https://downloads.mysql.com/docs/sakila-db.zip   
+     unzip sakila-db.zip   
+1.8. mysql> CREATE DATABASE sakila;   
+     mysql> USE sakila;   
+	 mysql> source sakila-db/sakila-schema.sql   
+	 mysql> source sakila-db/sakila-data.sql   
+1.9. ![tables.png)](https://github.com/v1us1885/hw-DDL-DML/blob/main/tables.png)   
 
 ---
 
